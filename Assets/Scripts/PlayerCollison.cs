@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerCollison : MonoBehaviour
 {
@@ -28,38 +29,30 @@ public class PlayerCollison : MonoBehaviour
         if (col.gameObject.name == "Base")
         {
             gameObject.transform.position = originalPosition;
-            myrigidbody.velocity = Vector3.zero;
-            myrigidbody.angularVelocity = Vector3.zero;
         }
         if (col.gameObject.name == "Enemigo")
         {
             gameObject.transform.position = originalPosition;
-            myrigidbody.velocity = Vector3.zero;
-            myrigidbody.angularVelocity = Vector3.zero;
         }
         if (col.gameObject.name == "Enemigo1")
         {
             gameObject.transform.position = originalPosition;
-            myrigidbody.velocity = Vector3.zero;
-            myrigidbody.angularVelocity = Vector3.zero;
         }
         if (col.gameObject.name == "Enemigo2")
         {
             gameObject.transform.position = originalPosition;
-            myrigidbody.velocity = Vector3.zero;
-            myrigidbody.angularVelocity = Vector3.zero;
         }
         if (col.gameObject.name == "Obstaculo")
         {
             gameObject.transform.position = originalPosition;
-            myrigidbody.velocity = Vector3.zero;
-            myrigidbody.angularVelocity = Vector3.zero;
         }
         if (col.gameObject.name == "Enemigo4")
         {
             gameObject.transform.position = originalPosition;
-            myrigidbody.velocity = Vector3.zero;
-            myrigidbody.angularVelocity = Vector3.zero;
+        }
+        if (col.gameObject.name == "Puerta")
+        {
+            SceneManager.LoadScene("Ganaste");  
         }
     }
 }
