@@ -7,6 +7,6 @@ public class LoadScene : MonoBehaviour
 {
     public void OnClick()
     {
-        SceneManager.LoadScene("Jugador nivel 1");
+        SceneManager.LoadScene("Level1");
     }
 }
