@@ -12,7 +12,7 @@ public class PlayerCollison : MonoBehaviour
     void Start()
     {
         gameObject.transform.position = originalPosition;
-        originalPosition = new Vector3(3, 0.5f, 8);
+        originalPosition = new Vector3(8, 0.5f, 1);
     }
 
     void OnCollisionEnter(Collision col)
@@ -49,7 +49,7 @@ public class PlayerCollison : MonoBehaviour
             myrigidbody.velocity = Vector3.zero;
             myrigidbody.angularVelocity = Vector3.zero;
         }
-        if (col.gameObject.name == "Enemigo3")
+        if (col.gameObject.name == "Obstaculo")
         {
             gameObject.transform.position = originalPosition;
             myrigidbody.velocity = Vector3.zero;

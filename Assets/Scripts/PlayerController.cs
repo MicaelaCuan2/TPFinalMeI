@@ -36,7 +36,7 @@ public class PlayerController : MonoBehaviour
     {
         if (other.CompareTag("Finish"))
         {
-            Debug.Log("Saliste, sos capo!");
+            Debug.Log("Saliste, felicitaciones!");
         }
     }
 }
