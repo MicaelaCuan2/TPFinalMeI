@@ -8,9 +8,11 @@ public class TimeManager : MonoBehaviour
     public Text txtTiempo;
     public Text txtTimeFloored;
     public Text txtCountDown;
+    public GameObject txtCount;
 
     public float TimeToChange;
     public float waitTime;
+    bool EstaActivado;
     int counter;
 
     void Start()
@@ -27,15 +29,20 @@ public class TimeManager : MonoBehaviour
         if (TimeToChange < Time.time)
         {
             counter--;
-            if (counter != 0)
+            if (counter > 0)
             {
                 txtCountDown.text = counter.ToString();
                 TimeToChange += waitTime;
             }
-            else
+            else if (counter < 0 && counter > -1)
             {
                 txtCountDown.text = "GO!";
             }
+        }
+
+        if (Time.time > 7)
+        {
+            txtCount.SetActive(false);
         }
     }
 }
