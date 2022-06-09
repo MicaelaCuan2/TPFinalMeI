@@ -642,6 +642,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4601ececb8d4e1445808b9118f4e6103, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Boton: {fileID: 2093737270}
 --- !u!114 &2093737273
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -683,7 +684,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2093737272}
-        m_MethodName: OnClick
+        m_MethodName: CambioDeEscena
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
