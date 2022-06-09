@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
-public class LoadScene : MonoBehaviour
+public class LoadSceneCambio : MonoBehaviour
 {
-    public void OnClick()
+    public GameObject Boton;
+    public void CambioDeEscena()
     {
         SceneManager.LoadScene("Level1");
     }

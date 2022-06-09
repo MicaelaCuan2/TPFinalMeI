@@ -32,11 +32,4 @@ public class PlayerController : MonoBehaviour
             transform.position += new Vector3(0, 0, velocidad);
         }
     }
-    void OnTriggerEnter (Collider other)
-    {
-        if (other.CompareTag("Finish"))
-        {
-            Debug.Log("Saliste, felicitaciones!");
-        }
-    }
 }

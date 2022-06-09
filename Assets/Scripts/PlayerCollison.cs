@@ -7,7 +7,6 @@ using UnityEngine.SceneManagement;
 public class PlayerCollison : MonoBehaviour
 {
     public Vector3 originalPosition;
-    Rigidbody myrigidbody;
 
     // Start is called before the first frame update
     void Start()
@@ -21,6 +20,10 @@ public class PlayerCollison : MonoBehaviour
         if (col.gameObject.name == "Pared")
         {
             gameObject.transform.position = originalPosition;
+        }
+        if (col.gameObject.name == "Puerta")
+        {
+            SceneManager.LoadScene("Ganaste");
         }
     }
 
@@ -50,9 +53,6 @@ public class PlayerCollison : MonoBehaviour
         {
             gameObject.transform.position = originalPosition;
         }
-        if (col.gameObject.name == "Puerta")
-        {
-            SceneManager.LoadScene("Ganaste");  
-        }
+       
     }
 }
