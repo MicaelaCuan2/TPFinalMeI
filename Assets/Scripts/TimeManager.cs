@@ -34,13 +34,13 @@ public class TimeManager : MonoBehaviour
                 txtCountDown.text = counter.ToString();
                 TimeToChange += waitTime;
             }
-            else if (counter < 0 && counter > -1)
+            else if (counter < 0 && counter > -1.2f)
             {
                 txtCountDown.text = "GO!";
             }
         }
 
-        if (Time.time > 7)
+        if (Time.time > 6)
         {
             txtCount.SetActive(false);
         }
