@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        velocidad = 0.2f;
+        velocidad = 0.5f;
     }
 
     // Update is called once per frame

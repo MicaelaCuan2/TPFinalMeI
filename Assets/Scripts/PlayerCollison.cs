@@ -12,12 +12,32 @@ public class PlayerCollison : MonoBehaviour
     void Start()
     {
         gameObject.transform.position = originalPosition;
-        originalPosition = new Vector3(8, 0.5f, 1);
+        originalPosition = new Vector3(9, 0.5f, 18);
     }
 
     void OnCollisionEnter(Collision col)
     {
         if (col.gameObject.name == "Pared")
+        {
+            gameObject.transform.position = originalPosition;
+        }
+        if (col.gameObject.name == "Pared1")
+        {
+            gameObject.transform.position = originalPosition;
+        }
+        if (col.gameObject.name == "Pared2")
+        {
+            gameObject.transform.position = originalPosition;
+        }
+        if (col.gameObject.name == "Pared3")
+        {
+            gameObject.transform.position = originalPosition;
+        }
+        if (col.gameObject.name == "Pared4")
+        {
+            gameObject.transform.position = originalPosition;
+        }
+        if (col.gameObject.name == "Pared5")
         {
             gameObject.transform.position = originalPosition;
         }
