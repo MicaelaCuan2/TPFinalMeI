@@ -5,25 +5,21 @@ using UnityEngine.UI;
 
 public class Instantiator : MonoBehaviour
 {
+    public int numero;
     public GameObject objectToClone;
-    int cloneAmount;
-    Text txtCloneAmount;
-    GameObject clon;
 
     void Start()
     {
-        cloneAmount = int.Parse(txtCloneAmount.text);
-        int counter = 0;
-        for (int i = counter; i < cloneAmount; i++)
+        int num = 0;
+        while (num < numero)
         {
-            Instantiate(objectToClone).transform.position += new Vector3(0, 2, 0);
-            Destroy(clon, 1);
+            Instantiate(objectToClone);
+            num++;
         }
     }
-
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }

@@ -19,67 +19,7 @@ public class PlayerCollison : MonoBehaviour
 
     void OnCollisionEnter(Collision col)
     {
-        if (col.gameObject.name == "Pared")
-        {
-            gameObject.transform.position = originalPosition;
-            source.clip = Dead;
-            source.Play();
-        }
-        if (col.gameObject.name == "Pared1")
-        {
-            gameObject.transform.position = originalPosition;
-            source.clip = Dead;
-            source.Play();
-        }
-        if (col.gameObject.name == "Pared2")
-        {
-            gameObject.transform.position = originalPosition;
-            source.clip = Dead;
-            source.Play();
-        }
-        if (col.gameObject.name == "Pared3")
-        {
-            gameObject.transform.position = originalPosition;
-            source.clip = Dead;
-            source.Play();
-        }
-        if (col.gameObject.name == "Pared4")
-        {
-            gameObject.transform.position = originalPosition;
-            source.clip = Dead;
-            source.Play();
-        }
-        if (col.gameObject.name == "Pared5")
-        {
-            gameObject.transform.position = originalPosition;
-            source.clip = Dead;
-            source.Play();
-        }
-        if (col.gameObject.name == "Enemigo")
-        {
-            gameObject.transform.position = originalPosition;
-            source.clip = Dead;
-            source.Play();
-        }
-        if (col.gameObject.name == "Enemigo1")
-        {
-            gameObject.transform.position = originalPosition;
-            source.clip = Dead;
-            source.Play();
-        }
-        if (col.gameObject.name == "Enemigo2")
-        {
-            gameObject.transform.position = originalPosition;
-            source.clip = Dead;
-            source.Play();
-        }
-        if (col.gameObject.name == "Obstaculo")
-        {
-            gameObject.transform.position = originalPosition;
-            source.clip = Dead;
-            source.Play();
-        }
-        if (col.gameObject.name == "Enemigo4")
+        if (col.gameObject.tag == "Muerte")
         {
             gameObject.transform.position = originalPosition;
             source.clip = Dead;
@@ -92,14 +32,14 @@ public class PlayerCollison : MonoBehaviour
             source.Play();
         }
     }
-
     void OnCollisionExit(Collision col)
     {
         if (col.gameObject.name == "Base")
         {
             gameObject.transform.position = originalPosition;
-            source.clip = Dead;
-            source.Play();
         }
     }
+
+
+
 }
