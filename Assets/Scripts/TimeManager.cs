@@ -12,13 +12,14 @@ public class TimeManager : MonoBehaviour
 
     public float TimeToChange;
     public float waitTime;
-    bool EstaActivado;
+    public bool TerminoCountDown;
     int counter;
 
     void Start()
     {
         counter = 3;
         txtCountDown.text = counter.ToString();
+        TerminoCountDown = false;
     }
 
     void Update()
@@ -43,6 +44,7 @@ public class TimeManager : MonoBehaviour
         if (Time.time > 6)
         {
             txtCount.SetActive(false);
+            TerminoCountDown = true;
         }
     }
 }

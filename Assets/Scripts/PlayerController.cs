@@ -5,11 +5,13 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public float velocidad;
+    public GameObject Timer;
 
     // Start is called before the first frame update
     void Start()
     {
         velocidad = 0.5f;
+        Timer.GetComponent<TimeManager>();
     }
 
     // Update is called once per frame
@@ -30,6 +32,11 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKey(KeyCode.UpArrow))
         {
             transform.position += new Vector3(0, 0, velocidad);
+        }
+
+        if (Input.GetKey(KeyCode.R))
+        {
+            transform.position += new Vector3(-14f, 0.5f, -17.1f);
         }
     }
 }
