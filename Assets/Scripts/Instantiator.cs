@@ -7,15 +7,17 @@ public class Instantiator : MonoBehaviour
 {
     public int numero;
     public GameObject objectToClone;
+    GameObject clon;
 
     void Start()
     {
         int num = 0;
         while (num < numero)
         {
-            Instantiate(objectToClone);
+            clon = Instantiate(objectToClone);
             num++;
         }
+        Destroy(clon, 1);
     }
     // Update is called once per frame
     void Update()

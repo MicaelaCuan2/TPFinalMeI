@@ -24,12 +24,13 @@ public class PlayerCollison : MonoBehaviour
             gameObject.transform.position = originalPosition;
             source.clip = Dead;
             source.Play();
+            SceneManager.LoadScene("Perdiste");
         }
         if (col.gameObject.name == "Puerta")
         {
-            SceneManager.LoadScene("Ganaste");
             source.clip = Win;
             source.Play();
+            SceneManager.LoadScene("Ganaste");
         }
     }
     void OnCollisionExit(Collision col)
@@ -37,6 +38,9 @@ public class PlayerCollison : MonoBehaviour
         if (col.gameObject.name == "Base")
         {
             gameObject.transform.position = originalPosition;
+            source.clip = Dead;
+            source.Play();
+            SceneManager.LoadScene("Perdiste");
         }
     }
 
