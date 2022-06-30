@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: 82500172960d746ac92642b45b0fea30
+guid: 394998eb289acce4c9ab30d6fb44ae9c
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: piedra
+    2100000: Dorado
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Pared de piedras
+    4300000: Circle
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: piedra
-    second: {fileID: 2100000, guid: a0a6d979291ed04418dd883bfe087130, type: 2}
+      name: Dorado
+    second: {fileID: 2100000, guid: f7c709fc022408348908e82743648b31, type: 2}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
-      name: 22781698_c_lida_textura_de_piedra_caliza_Foto_de_archivo_322294
-    second: {fileID: 2800000, guid: 2f9810eb6b3488f44bb6e38b62725e4a, type: 3}
+      name: depositphotos_55022169-stock-photo-golden-glitter-texture-background
+    second: {fileID: 2800000, guid: 598e8c4a42b02b943ab72a630b47dc26, type: 3}
   materials:
     importMaterials: 1
     materialName: 0

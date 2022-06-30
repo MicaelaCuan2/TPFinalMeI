@@ -1,14 +1,14 @@
 fileFormatVersion: 2
-guid: 0a7f585c3d58a4cb2b946787f0d9f574
+guid: 5b69811a0d0ae6346843c820cdaef63f
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: Dorado
+    2100000: color
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Circle
+    4300000: Enemigo
   externalObjects: {}
   materials:
     importMaterials: 1

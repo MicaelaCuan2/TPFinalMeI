@@ -1,25 +1,49 @@
 fileFormatVersion: 2
-guid: 82500172960d746ac92642b45b0fea30
+guid: 7263a6b143c6e92479be817803c2341a
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: piedra
+    2100000: Verde Claro
+    2100002: Verde Oscuro
+    2100004: Verde Claro.001
+    2100006: Verde Oscuro.001
+    2100008: Verde Claro.002
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Pared de piedras
+    4300000: Cube
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: piedra
-    second: {fileID: 2100000, guid: a0a6d979291ed04418dd883bfe087130, type: 2}
+      name: Verde Claro
+    second: {fileID: 2100000, guid: dcb1ae12f56db0440be2067889740c73, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Verde Claro.001
+    second: {fileID: 2100000, guid: 1143675e4629d6647b8f9d86e5c82e4a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Verde Claro.002
+    second: {fileID: 2100000, guid: 330f17928385a5d4a896c6ed5811f3be, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Verde Oscuro
+    second: {fileID: 2100000, guid: 72a2fa0dc8eec904aa6bd55e56d3e2a2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Verde Oscuro.001
+    second: {fileID: 2100000, guid: dcd4a5ca6a7bba24c97eb5207e429d60, type: 2}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
-      name: 22781698_c_lida_textura_de_piedra_caliza_Foto_de_archivo_322294
-    second: {fileID: 2800000, guid: 2f9810eb6b3488f44bb6e38b62725e4a, type: 3}
+      name: paleta-de-colores-verde
+    second: {fileID: 2800000, guid: 85ad3bbe2b828144bb20a4998f5d5e67, type: 3}
   materials:
     importMaterials: 1
     materialName: 0
